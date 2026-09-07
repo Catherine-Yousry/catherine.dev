@@ -1,0 +1,971 @@
+<!doctype html>
+
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Catherine Yousry - Data Analytics &amp; BI Specialist Portfolio"
+      name="description"
+    />
+    <title>Catherine Yousry | Data Analytics &amp; BI Specialist</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas aria-hidden="true" id="bg-canvas"></canvas>
+    <div aria-hidden="true" class="glow-bg"></div>
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a class="logo" href="#">Catherine Yousry</a>
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            aria-label="Toggle dark and light mode"
+            class="btn-theme"
+            id="theme-toggle"
+            title="Toggle Dark / Light Mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button aria-label="Toggle Menu" class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <!-- Reordered: Visual Column First -->
+        <div class="hero-visual">
+          <div class="visual-wrapper">
+            <div class="photo-glow-frame">
+              <img
+                alt="Catherine Yousry"
+                class="hero-profile-photo"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+                src="hero-profile.jpg"
+              />
+              <div
+                class="photo-fallback"
+                style="
+                  display: none;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  background: var(--bg-card);
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 700;
+                  color: var(--accent-purple);
+                "
+              >
+                CY
+              </div>
+            </div>
+            <!-- Floating Analytical Indicators -->
+            <div class="badge-float badge-top-right">
+              <span class="status-dot"></span>
+              <span>Real-time Insights</span>
+            </div>
+            <div class="interactive-chart-card">
+              <div class="chart-header">
+                <div>
+                  <span class="chart-tag">LIVE METRICS</span>
+                  <h4 class="chart-title">Data Pipeline Efficiency</h4>
+                </div>
+                <span class="chart-kpi">+98.4%</span>
+              </div>
+              <div class="chart-body">
+                <svg
+                  class="analytics-svg"
+                  preserveaspectratio="none"
+                  viewbox="0 0 300 100"
+                >
+                  <path
+                    class="chart-area"
+                    d="M0,80 Q75,20 150,50 T300,10 L300,100 L0,100 Z"
+                    fill="rgba(2, 132, 199, 0.15)"
+                  ></path>
+                  <path
+                    class="chart-line"
+                    d="M0,80 Q75,20 150,50 T300,10"
+                    fill="none"
+                    stroke="var(--accent-purple)"
+                    stroke-width="3"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Text Flow Column -->
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="pulse-dot"></span>
+            <span>Open to freelance opportunities</span>
+          </div>
+          <h1 class="hero-name">Catherine Yousry</h1>
+          <h2 class="hero-role">Data Analytics &amp; BI Specialist</h2>
+          <p class="hero-value-statement">
+            Turn your data into your next decision.
+          </p>
+          <p class="hero-supporting-text">
+            Helping businesses clean raw datasets, uncover performance drivers,
+            and build clear interactive dashboards that enable faster, confident
+            decision-making.
+          </p>
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="#contact">Let's Work Together</a>
+            <a class="btn btn-outline" href="#projects">View Featured Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="section-header">
+        <h2 class="section-title">About &amp; Approach</h2>
+        <p class="section-subtitle">
+          Building practical systems, reliable pipelines, and visual clarity
+        </p>
+      </div>
+      <div class="about-container">
+        <div class="about-content">
+          <h2 class="about-heading-text">
+            Turning Messy Business Data into Clear Strategic Decisions
+          </h2>
+          <div class="about-body">
+            <p>
+              I am building my career in Data Analytics and Business
+              Intelligence through rigorous, hands on work with real datasets,
+              complex business questions, and practical reporting. Currently
+              advancing through the
+              <strong
+                >Digital Egypt Pioneers Initiative (DEPI) Data Analytics program
+                (Round 5, with eYouth)</strong
+              >, my focus is centered on execution without shortcuts.
+            </p>
+            <p>
+              Backed by a strong Computer Science foundation from Ain Shams
+              University, I look beyond just writing code or building pretty
+              charts. My day-to-day workflow focuses on three fundamental
+              pillars: <strong>rigorous data cleaning</strong>,
+              <strong>efficient SQL queries</strong>, and
+              <strong>clear interactive dashboards</strong>.
+            </p>
+            <p class="about-philosophy">
+              <i class="fas fa-quote-left"></i>
+              I care deeply about understanding the business question
+              <em>behind</em> the data. My goal isn't just to produce a
+              report—it's to deliver an insight someone can actually use to
+              drive their next step.
+            </p>
+          </div>
+          <div class="outcomes-grid">
+            <div class="outcome-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>From Messy Excel to Structured Systems</h4>
+                <p>
+                  Transform scattered spreadsheets and uncleaned tables into
+                  reliable, query-ready data pipelines.
+                </p>
+              </div>
+            </div>
+            <div class="outcome-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>Dashboards That Tell a Clear Story</h4>
+                <p>
+                  Replace repetitive manual reporting with dynamic visual
+                  dashboards designed for immediate clarity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-usp-container">
+          <div class="about-meta-strip">
+            <div class="meta-item">
+              <span class="meta-label">Core tools</span>
+              <span class="meta-value">SQL / Power BI / Python</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Track</span>
+              <span class="meta-value">Data Analysis</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Works with</span>
+              <span class="meta-value">Freelance clients</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Delivery</span>
+              <span class="meta-value">Dashboards / Reports / DBs</span>
+            </div>
+          </div>
+          <div class="usp-card">
+            <h3 class="usp-header-title">How I Process Your Data</h3>
+            <p class="usp-header-sub">
+              The Value Pipeline: Raw Numbers to Business Outcomes
+            </p>
+            <div class="pipeline-wrapper">
+              <div class="pipeline-step" data-step="1">
+                <div class="step-icon"><i class="fas fa-database"></i></div>
+                <div class="step-info">
+                  <span class="step-label">RAW DATA</span>
+                  <span class="step-desc"
+                    >Uncleaned Excel files, scattered tables &amp; APIs</span
+                  >
+                </div>
+              </div>
+              <div class="pipeline-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="pipeline-step" data-step="2">
+                <div class="step-icon"><i class="fas fa-filter"></i></div>
+                <div class="step-info">
+                  <span class="step-label">CLEAN</span>
+                  <span class="step-desc"
+                    >Handling missing values, deduplication &amp;
+                    structuring</span
+                  >
+                </div>
+              </div>
+              <div class="pipeline-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="pipeline-step" data-step="3">
+                <div class="step-icon"><i class="fas fa-code-branch"></i></div>
+                <div class="step-info">
+                  <span class="step-label">ANALYZE</span>
+                  <span class="step-desc"
+                    >SQL queries, aggregation &amp; trend detection</span
+                  >
+                </div>
+              </div>
+              <div class="pipeline-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="pipeline-step" data-step="4">
+                <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="step-info">
+                  <span class="step-label">VISUALIZE</span>
+                  <span class="step-desc"
+                    >Intuitive Power BI &amp; Streamlit interactive
+                    dashboards</span
+                  >
+                </div>
+              </div>
+              <div class="pipeline-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="pipeline-step step-outcome" data-step="5">
+                <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="step-info">
+                  <span class="step-label">DECIDE</span>
+                  <span class="step-desc"
+                    >Actionable business steps &amp; clear growth outcomes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+      <div class="section-header">
+        <h2 class="section-title">Academic Education</h2>
+        <p class="section-subtitle">
+          Academic background and solid technical foundation
+        </p>
+      </div>
+      <div class="education-container">
+        <div class="education-card">
+          <div class="edu-icon-box"><i class="fas fa-university"></i></div>
+          <div class="edu-details">
+            <div class="edu-header">
+              <div>
+                <h3 class="edu-institution">Ain Shams University</h3>
+                <span class="edu-faculty"
+                  >Faculty of Computer and Information Sciences</span
+                >
+              </div>
+              <!-- <span class="edu-badge" data-i18n="eduBadge"
+                >Expected Graduation: 2028</span
+              > -->
+            </div>
+            <div class="edu-meta">
+              <span class="edu-degree"
+                >Bachelor of Computer and Information Sciences</span
+              >
+              <span class="edu-divider">•</span>
+              <span class="edu-stream">Mainstream</span>
+              <span class="edu-divider">•</span>
+              <span class="edu-date">September 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-subtitle">
+          Technical and analytical toolkit used to deliver precise results
+        </p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon"><i class="fas fa-chart-line"></i></div>
+              <h3>Data Analytics</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Data Transformation</span>
+              <span class="skill-tag">Exploratory Data Analysis</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon"><i class="fas fa-chart-bar"></i></div>
+              <h3>Business Intelligence</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag highlight-tag">Power BI</span>
+              <span class="skill-tag highlight-tag">Microsoft Excel</span>
+              <span class="skill-tag">KPI Reporting</span>
+              <span class="skill-tag">Dashboard Development</span>
+              <span class="skill-tag">Business Insights</span>
+            </div>
+          </div>
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon"><i class="fas fa-database"></i></div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag highlight-tag">SQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">SQLite</span>
+            </div>
+          </div>
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon"><i class="fas fa-code"></i></div>
+              <h3>Software Development</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">Django</span>
+            </div>
+          </div>
+          <div class="skills-card full-width-card">
+            <div class="skills-card-header">
+              <div class="skills-icon"><i class="fas fa-tools"></i></div>
+              <h3>Tools &amp; Environment</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Microsoft Office</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Single Experience Section -->
+    <section class="experience-section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Experience &amp; Practical Work</h2>
+        <p class="section-subtitle">
+          Practical path built on intensive training, leadership, and applied
+          projects
+        </p>
+      </div>
+      <div class="experience-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Data Analytics Trainee</h3>
+                  <span class="company-name"
+                    >Digital Egypt Pioneers Initiative (DEPI) • eYouth
+                    Partner</span
+                  >
+                </div>
+                <span class="timeline-date">Round 5 (2026)</span>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Intensive practical training focused on processing real-world
+                  business data:
+                </p>
+                <ul class="timeline-bullets">
+                  <li>
+                    Cleaning and structuring large raw datasets for instant
+                    analysis.
+                  </li>
+                  <li>
+                    Writing advanced SQL queries to transform raw tables into
+                    precise insights.
+                  </li>
+                  <li>
+                    Designing interactive dashboards that clearly illustrate
+                    performance KPIs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Front-End Committee Leadership</h3>
+                  <span class="company-name"
+                    >MSP Tech Club — Ain Shams University</span
+                  >
+                </div>
+                <span class="timeline-date">2025</span>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Leading technical members in web interface creation and
+                  maintainable structure:
+                </p>
+                <ul class="timeline-bullets">
+                  <li>
+                    Organizing workshops and technical training sessions for
+                    committee members.
+                  </li>
+                  <li>
+                    Conducting code reviews to enforce Clean Code and Responsive
+                    Design standards.
+                  </li>
+                  <li>
+                    Fostering team management, task distribution, and
+                    communication skills.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">
+                    Practical Systems &amp; Data Projects
+                  </h3>
+                  <span class="company-name"
+                    >Academic &amp; Independent Engineering Projects</span
+                  >
+                </div>
+                <span class="timeline-date">2025 – Present</span>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Developing end-to-end software solutions combining Computer
+                  Science &amp; Analytics:
+                </p>
+                <ul class="timeline-bullets">
+                  <li>
+                    Building predictive models (such as LIP.AI) with Python and
+                    Streamlit.
+                  </li>
+                  <li>
+                    Designing relational database schemas (PostgreSQL/SQLite)
+                    and OpenAPI specs.
+                  </li>
+                  <li>
+                    Creating full desktop and web applications following
+                    engineering standards.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="section-header">
+        <h2 class="section-title">Services Offered</h2>
+        <p class="section-subtitle">
+          Practical data solutions converting raw numbers into actionable growth
+        </p>
+      </div>
+      <div class="services-container">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-broom"></i></div>
+            <div class="service-content">
+              <h3>Data Cleaning &amp; Preparation</h3>
+              <p class="service-outcome">
+                Transform scattered files into 100% structured and reliable data
+                ready for decision making.
+              </p>
+              <ul class="service-features">
+                <li>Deduplication &amp; Conflict Resolution</li>
+                <li>Missing Value Handling</li>
+                <li>Schema &amp; Format Standardizing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+            <div class="service-content">
+              <h3>Exploratory Data Analysis</h3>
+              <p class="service-outcome">
+                Uncover hidden trends, missed opportunities, and buying
+                behaviors before spending budget.
+              </p>
+              <ul class="service-features">
+                <li>Trend &amp; Seasonality Detection</li>
+                <li>Customer Behavior Analysis</li>
+                <li>Anomaly &amp; Variable Outlier Detection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-file-excel"></i></div>
+            <div class="service-content">
+              <h3>Excel Data Analysis</h3>
+              <p class="service-outcome">
+                Extract maximum value from spreadsheets into dynamic automated
+                reports.
+              </p>
+              <ul class="service-features">
+                <li>Advanced Pivot Tables &amp; Slicers</li>
+                <li>Complex Analytical Data Models</li>
+                <li>KPI &amp; Formula Automation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <div class="service-content">
+              <h3>SQL Database Analysis</h3>
+              <p class="service-outcome">
+                Query millions of records across large databases to get direct
+                business answers.
+              </p>
+              <ul class="service-features">
+                <li>Complex &amp; High-Performance Queries</li>
+                <li>Multi-Table Relational Joins</li>
+                <li>Aggregations &amp; Time-Series Metrics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+            <div class="service-content">
+              <h3>Power BI Dashboards</h3>
+              <p class="service-outcome">
+                Executive dashboards to track key company KPIs in one central
+                screen.
+              </p>
+              <ul class="service-features">
+                <li>Intuitive Interactive Interface</li>
+                <li>Automated Data Refresh &amp; DAX Modeling</li>
+                <li>Sales &amp; Revenue Performance Tracking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card highlight-card">
+            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="service-content">
+              <h3>Data Visualization &amp; Strategic Insights</h3>
+              <p class="service-outcome">
+                Translate analytical complexity into a simple visual story with
+                executive action items.
+              </p>
+              <ul class="service-features">
+                <li>Clear &amp; Uncluttered Visual Charts</li>
+                <li>Executive Summary Presentations</li>
+                <li>Fact-Based Strategic Recommendations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Featured Case Studies</h2>
+        <p class="section-subtitle">
+          Practical case studies showing how I turn data into useful systems and
+          decisions.
+        </p>
+      </div>
+      <!-- <div
+        class="projects-filter-container"
+        role="group"
+        aria-label="Project filters"
+      >
+        <button
+          class="filter-btn active"
+          type="button"
+          data-filter="all"
+          data-i18n="filterAll"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="analytics"
+          data-i18n="filterAnalytics"
+        >
+          Data Analytics
+        </button>
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="bi"
+          data-i18n="filterBI"
+        >
+          Business Intelligence
+        </button>
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="sql"
+          data-i18n="filterSQL"
+        >
+          SQL
+        </button>
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="python"
+          data-i18n="filterPython"
+        >
+          Python
+        </button>
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="dev"
+          data-i18n="filterDev"
+        >
+          Software Development
+        </button>
+      </div> -->
+      <div class="projects-grid">
+        <div
+          class="project-card featured-card"
+          data-category="analytics bi sql"
+        >
+          <div class="featured-visual">
+            <div class="dashboard-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide active">
+                  <img
+                    alt="Superstore Executive Overview Dashboard"
+                    class="lightbox-trigger"
+                    data-caption="Superstore Performance: Executive Analytics &amp; Financial Overview"
+                    src="Dashboard_1_Executive_Overview.png"
+                  />
+                  <span class="slide-badge"
+                    >Dashboard 1: Executive Overview</span
+                  >
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="Operational and Customer Insights Dashboard"
+                    class="lightbox-trigger"
+                    data-caption="Operational &amp; Customer Insights: Distribution Analysis"
+                    src="Dashboard_2_Operational_Analytics.png"
+                  />
+                  <span class="slide-badge"
+                    >Dashboard 2: Operational Insights</span
+                  >
+                </div>
+              </div>
+              <button aria-label="Previous Slide" class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button aria-label="Next Slide" class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <!-- <span class="badge-featured"
+                ><span data-i18n="badgeFeatured"
+                  >Featured Case Study</span
+                ></span
+              > -->
+              <!-- <span>SQL</span> -->
+              <span>Python</span>
+              <!-- <span>Power BI</span> -->
+            </div>
+            <h3 class="project-title">
+              Retail Sales &amp; Business Intelligence Dashboard
+            </h3>
+            <div class="case-study-grid">
+              <div class="cs-step">
+                <strong>Challenge:</strong>
+                <p>
+                  Dispersed retail sales data made operational insights and
+                  profit driver identification difficult to access.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Data &amp; Process:</strong>
+                <p>
+                  Data extraction and cleaning via SQL, followed by exploratory
+                  data analysis, relational modeling, and interactive visual
+                  analytics.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Outcome:</strong>
+                <p>
+                  An interactive BI dashboard suite for executive performance
+                  tracking, regional sales analysis, and profit margin
+                  optimization.
+                </p>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a
+                class="btn-project"
+                href="https://github.com/Catherine-Yousry/Superstore.git"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ========================================================================================================================================================================================= -->
+        <!-- 2. REGULAR PROJECT CARD 1 -->
+        <div class="project-card" data-category="machine-learning">
+          <div class="project-header">
+            <div class="folder-icon"><i class="far fa-folder"></i></div>
+            <div class="project-links">
+              <a
+                aria-label="GitHub Repository"
+                href="https://github.com/Catherine-Yousry/LIP.AI.git"
+                rel="noopener"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">LIP.AI - Loan Status Prediction</h3>
+          <p class="project-description">
+            Machine learning application predicting loan approval status using
+            classification algorithms, feature scaling, and a interactive
+            Streamlit interface.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Scikit-Learn</span>
+            <span>Streamlit</span>
+            <span>XGBoost</span>
+          </div>
+        </div>
+        <!-- 3. REGULAR PROJECT CARD 2 -->
+        <div class="project-card" data-category="web-dev">
+          <div class="project-header">
+            <div class="folder-icon"><i class="far fa-folder"></i></div>
+            <div class="project-links">
+              <a
+                aria-label="GitHub Repository"
+                href="https://github.com/Catherine-Yousry/cartzone.git"
+                rel="noopener"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <h3 class="project-title">CartZone E-Commerce Platform</h3>
+          <p class="project-description">
+            Full-scale e-commerce web platform featuring PostgreSQL database
+            modeling, OpenAPI specifications, and responsive UI components.
+          </p>
+          <div class="project-tags">
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+            <span>REST API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Replacement: Achievements & Honors Section -->
+    <section class="achievements-section" id="achievements">
+      <div class="section-header">
+        <h2 class="section-title">Achievements &amp; Honors</h2>
+        <p class="section-subtitle">
+          Milestones that reflect continuous learning, leadership, and applied
+          practice.
+        </p>
+      </div>
+      <div class="achievements-grid">
+        <article class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+          <div>
+            <span class="achievement-kicker">Professional Training</span>
+            <h3>DEPI Data Analytics Track</h3>
+            <p>
+              Intensive practical training in data cleaning, SQL analysis,
+              dashboards, and business reporting.
+            </p>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-users-gear"></i></div>
+          <div>
+            <span class="achievement-kicker">Technical Leadership</span>
+            <h3>Front-End Committee Leadership</h3>
+            <p>
+              Leading workshops, code reviews, and collaborative delivery within
+              the MSP Tech Club community.
+            </p>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+          <div>
+            <span class="achievement-kicker">Applied Projects</span>
+            <h3>End-to-End Systems Portfolio</h3>
+            <p>
+              Building practical analytics, database, web, and desktop projects
+              across Python, SQL, and Streamlit.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Dashboard Lightbox Modal -->
+    <div
+      aria-hidden="true"
+      aria-label="Dashboard preview"
+      aria-modal="true"
+      class="lightbox-modal"
+      id="lightbox-modal"
+      role="dialog"
+    >
+      <button
+        aria-label="Close dashboard preview"
+        class="lightbox-close"
+        id="lightbox-close"
+        type="button"
+      >
+        ×
+      </button>
+      <img alt="" class="lightbox-content" id="lightbox-img" src="" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-card">
+          <h3 class="contact-card-title">
+            Have a Data Challenge or Opportunity?
+          </h3>
+          <p class="contact-card-sub">
+            Whether you need a cleaned-up dataset, an interactive Power BI
+            dashboard, or a full SQL reporting pipeline — I'm open to freelance
+            projects and collaborations.
+          </p>
+          <a
+            class="btn btn-primary contact-cv-btn"
+            href="Catherine_Yousry_Resume.pdf"
+            download="Catherine_Yousry_Resume.pdf"
+            ><i class="fa-solid fa-file-arrow-down"></i> Download CV (PDF)</a
+          >
+          <div class="social-grid">
+            <a class="social-card" href="mailto:catherine.yousry.dev@gmail.com">
+              <div class="social-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span class="social-label">Email Me</span>
+            </a>
+            <a
+              class="social-card"
+              href="https://www.linkedin.com/in/catherine-yousry-361813356/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <span class="social-label">LinkedIn</span>
+            </a>
+            <a
+              class="social-card"
+              href="https://github.com/Catherine-Yousry"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div class="social-icon"><i class="fa-brands fa-github"></i></div>
+              <span class="social-label">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>
+          <span>© 2026 All Rights Reserved | Designed &amp; Built by </span>
+          <strong>Catherine Yousry</strong>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
