@@ -1132,6 +1132,42 @@ section {
 .prev-btn { left: 10px; }
 .next-btn { right: 10px; }
 
+/* Chart carousel: fixed frame so every chart sits centered,
+   no matter what size or shape the image has */
+.chart-carousel .carousel-track {
+  aspect-ratio: 16 / 10;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.chart-carousel .carousel-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-carousel .carousel-slide.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-carousel .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 36px 48px 14px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+}
+
+.chart-carousel .slide-badge {
+  top: 10px;
+  left: 12px;
+  bottom: auto;
+  right: auto;
+}
+
 .project-content {
   padding: 28px;
   display: flex;

@@ -68,7 +68,7 @@
                   this.style.display = 'none';
                   this.nextElementSibling.style.display = 'flex';
                 "
-                src="hero-profile.jpg"
+                src="Profile picture.png"
               />
               <div
                 class="photo-fallback"
@@ -852,6 +852,109 @@
               <a
                 class="btn-project"
                 href="https://github.com/Catherine-Yousry/E-Commerce-Analytics-Suite.git"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: AI-Powered Fraud Detection -->
+        <div
+          class="project-card featured-card"
+          data-category="machine-learning python"
+        >
+          <div class="featured-visual">
+            <div class="dashboard-carousel chart-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide active">
+                  <img
+                    alt="Transaction risk distribution chart"
+                    class="lightbox-trigger"
+                    data-caption="Fraud Detection: Legitimate vs Fraud Transaction Distribution"
+                    src="fraud-class-distribution.png"
+                  />
+                  <span class="slide-badge">Class Distribution</span>
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="Fraud rate across merchant categories and countries"
+                    class="lightbox-trigger"
+                    data-caption="Fraud Detection: Fraud Rate by Merchant Category &amp; Country"
+                    src="fraud-rate-by-category.png"
+                  />
+                  <span class="slide-badge">Fraud Patterns</span>
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="Model performance comparison chart"
+                    class="lightbox-trigger"
+                    data-caption="Fraud Detection: Model Performance Comparison"
+                    src="fraud-model-comparison.png"
+                  />
+                  <span class="slide-badge">Model Comparison</span>
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="Top features by Random Forest importance"
+                    class="lightbox-trigger"
+                    data-caption="Fraud Detection: Top Features by Random Forest Importance"
+                    src="fraud-feature-importance.png"
+                  />
+                  <span class="slide-badge">Feature Importance</span>
+                </div>
+              </div>
+              <button aria-label="Previous Slide" class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button aria-label="Next Slide" class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>XGBoost</span>
+              <span>Streamlit</span>
+            </div>
+            <h3 class="project-title">
+              AI-Powered Fraud Detection System
+            </h3>
+            <div class="case-study-grid">
+              <div class="cs-step">
+                <strong>Challenge:</strong>
+                <p>
+                  Only about 10% of the transactions were fraudulent, so
+                  accuracy alone could not show whether a model was really
+                  catching fraud without flagging too many legitimate payments.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Data &amp; Process:</strong>
+                <p>
+                  Cleaned 5,300 raw transactions down to 5,000, engineered new
+                  features, handled the class imbalance, and compared four
+                  models using cross-validation, hyperparameter tuning, and a
+                  stacking ensemble.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Outcome:</strong>
+                <p>
+                  A stacking model with 79.8% F1-score and 98.2% ROC-AUC on
+                  unseen data, deployed as a Streamlit app that returns a fraud
+                  probability and risk level for each transaction.
+                </p>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a
+                class="btn-project"
+                href="https://github.com/Catherine-Yousry/AI-Powered-Fraud-Detection.git"
                 rel="noopener"
                 target="_blank"
               >
