@@ -861,7 +861,101 @@
           </div>
         </div>
 
-        <!-- PROJECT 3: AI-Powered Fraud Detection -->
+        <!-- PROJECT 3: SQL Data Warehouse -->
+        <div
+          class="project-card featured-card"
+          data-category="sql data-warehouse"
+        >
+          <div class="featured-visual">
+            <div class="dashboard-carousel chart-carousel">
+              <div class="carousel-track">
+                <div class="carousel-slide active">
+                  <img
+                    alt="Star schema diagram with one fact table and four dimension tables"
+                    class="lightbox-trigger"
+                    data-caption="Central Superstore: Star Schema (1 Fact Table + 4 Dimension Tables)"
+                    src="sql-star-schema.png"
+                  />
+                  <span class="slide-badge">Star Schema</span>
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="SQL query results showing row counts, total sales and top customers"
+                    class="lightbox-trigger"
+                    data-caption="Central Superstore: Warehouse Row Counts, KPIs and Top Customers"
+                    src="sql-query-results.png"
+                  />
+                  <span class="slide-badge">Query Results</span>
+                </div>
+                <div class="carousel-slide">
+                  <img
+                    alt="Stored procedure that returns a state report by year"
+                    class="lightbox-trigger"
+                    data-caption="Central Superstore: Stored Procedure for State Reports by Year"
+                    src="sql-stored-procedure.png"
+                  />
+                  <span class="slide-badge">Stored Procedure</span>
+                </div>
+              </div>
+              <button aria-label="Previous Slide" class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button aria-label="Next Slide" class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>SQL Server</span>
+              <span>T-SQL</span>
+              <span>Star Schema</span>
+              <span>Data Warehouse</span>
+            </div>
+            <h3 class="project-title">
+              Central Superstore Data Warehouse &amp; SQL Analytics
+            </h3>
+            <div class="case-study-grid">
+              <div class="cs-step">
+                <strong>Challenge:</strong>
+                <p>
+                  Everything sat in one flat staging table, with customer,
+                  product and location details repeated on every row, which
+                  made reporting slow and hard to trust.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Data &amp; Process:</strong>
+                <p>
+                  Designed a star schema with 1 fact table and 4 dimensions,
+                  removed duplicates, handled missing postal codes, and safely
+                  converted data types. Then wrote 15+ queries using joins,
+                  CTEs, window functions and CASE logic.
+                </p>
+              </div>
+              <div class="cs-step">
+                <strong>Outcome:</strong>
+                <p>
+                  A clean warehouse of 2,306 sales records, about $500K in total
+                  sales, with a reusable KPI view, a stored procedure for
+                  state-by-year reports, and indexes for faster queries.
+                </p>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a
+                class="btn-project"
+                href="https://github.com/Catherine-Yousry/Central-Superstore-Data-Warehouse.git"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: AI-Powered Fraud Detection -->
         <div
           class="project-card featured-card"
           data-category="machine-learning python"
@@ -1101,8 +1195,8 @@
           </p>
           <a
             class="btn btn-primary contact-cv-btn"
-            href="Catherine_Yousry_Resume(Data Analytics).pdf"
-            download="Catherine_Yousry_Resume(Data Analytics).pdf"
+            href="Catherine_Yousry_Resume.pdf"
+            download="Catherine_Yousry_Resume.pdf"
             ><i class="fa-solid fa-file-arrow-down"></i> Download CV (PDF)</a
           >
           <div class="social-grid">
